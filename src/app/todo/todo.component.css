@@ -1,0 +1,22 @@
+body{
+    
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+#input1{
+padding-top:20px ;
+    margin-left: 25%;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 200px;
+}
+h1:hover{
+    color: #2f1a4363;
+    cursor: pointer;
+}
+.todos.done .form-control {
+	text-decoration: line-through;
+}

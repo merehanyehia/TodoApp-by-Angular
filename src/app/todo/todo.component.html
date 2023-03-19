@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+</head>
+<body>
+  <h1>What Do You Want To Do ?</h1>
+  <div id="input1" class="input-group w-50" >
+    <input type="text" class="form-control" placeholder="Enter Your Task" aria-label="Recipient's username with two button addons" [(ngModel)]="todoInput">
+    <button class="btn btn-outline-secondary" type="button"><img src="../../assets/plus.png" (click)="addTodo()">
+    </button>
+    </div>
+  <div class="todos {{(todo.completed ?'done' : '')}}"*ngFor="let todo of todos; let i=index;">
+  <div id="input1" class="input-group w-50" >
+    <input type="text" class="form-control" value={{todo.content}} aria-label="Recipient's username with two button addons" >
+    <button class="btn btn-outline-secondary" type="button" (click)="doneTodo(i)"><img src="../../assets/check.png">
+    </button>
+    <button class="btn btn-outline-secondary" type="button" (click)="updateTodo(i)"><img src="../../assets/edit.png">
+    </button>
+    <button class="btn btn-outline-secondary"  type="button" (click)="deleteTodo(i)"><img src="../../assets/trash.png">
+    </button>
+</div>
+</div>
+</body>
+</html>
+
+ 
